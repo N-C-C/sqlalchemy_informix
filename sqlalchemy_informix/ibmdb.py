@@ -629,3 +629,5 @@ class InformixDialect(default.DefaultDialect):
              view_name, schema).fetchall()
 
         return ''.join([row[0] for row in c])
+
+dialect = InformixDialect
